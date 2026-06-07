@@ -1,10 +1,12 @@
-# calloutbox
+# calloutbox - colored callout boxes for LaTeX (document/Beamer)
 
 A small LaTeX package for **colored callout boxes** with a tinted background, a
 colored side bar, and a circular or numbered marker. Each box can show a bold
 colored heading plus body text, or body text only.
 
-![preview](assets/preview.png)
+![preview](preview1.png)
+![preview](preview2.png)
+![preview](preview3.png)
 
 ## Features
 
