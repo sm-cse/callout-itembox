@@ -4,6 +4,21 @@ A small LaTeX package for **colored callout boxes** with a tinted background, a
 colored side bar, and a circular or numbered marker. Each box can show a bold
 colored heading plus body text, or body text only.
 
+**Quick Usage:** drop `calloutbox.sty` next to your `.tex` file. 
+```latex
+\usepackage{calloutbox}
+
+% heading + body
+\callout{Primary Objective}{To establish a correlation between mechanical
+axis correction and plantar pressure distribution.}
+
+% body only (starred)
+\callout*[theme=red]{All parameters recorded pre- and post-operatively.}
+
+% numbered marker, rounded corners
+\callout[theme=green, number=1, corners=rounded]{Step one}{First do this.}
+```
+
 ![preview](preview1.png)
 ![preview](preview2.png)
 ![preview](preview3.png)
@@ -38,23 +53,7 @@ cp calloutbox.sty $(kpsewhich -var-value TEXMFHOME)/tex/latex/calloutbox/
 mktexlsr   # or texhash; MiKTeX: refresh the FNDB
 ```
 
-## Usage
-
-```latex
-\usepackage{calloutbox}
-
-% heading + body
-\callout{Primary Objective}{To establish a correlation between mechanical
-axis correction and plantar pressure distribution.}
-
-% body only (starred)
-\callout*[theme=red]{All parameters recorded pre- and post-operatively.}
-
-% numbered marker, rounded corners
-\callout[theme=green, number=1, corners=rounded]{Step one}{First do this.}
-```
-
-## Options
+## Usage Options
 
 All options go in the optional `[...]` argument as `key=value`, comma-separated.
 
