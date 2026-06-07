@@ -1,0 +1,89 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{calloutbox}
+\usepackage{parskip}
+\pagestyle{empty}
+
+\newcommand{\sectionrule}[1]{\bigskip{\bfseries\Large #1}\par\smallskip}
+
+\begin{document}
+
+\begin{center}\bfseries\LARGE calloutbox --- colour gallery\end{center}
+\medskip
+
+% ===================================================================
+\sectionrule{Built-in colour themes}
+Every theme sets the bar, background and heading colour together.
+Call it with \texttt{theme=<name>}.
+
+\callout[theme=blue]{theme=blue}{Deep navy bar on a light blue-grey
+background. This is the default if no theme is given.}
+
+\callout[theme=red]{theme=red}{Strong red bar on a soft peach background.}
+
+\callout[theme=teal]{theme=teal}{Dark teal bar on a pale teal background.}
+
+\callout[theme=green]{theme=green}{Forest green bar on a light green
+background.}
+
+\callout[theme=purple]{theme=purple}{Deep purple bar on a faint lavender
+background.}
+
+\callout[theme=orange]{theme=orange}{Burnt orange bar on a warm cream
+background.}
+
+\callout[theme=slate]{theme=slate}{Blue-grey slate bar on a cool neutral
+background --- a quiet, low-contrast option.}
+
+% ===================================================================
+\sectionrule{Same themes, body only (no heading)}
+\callout*[theme=blue]{Body-only blue.}
+\callout*[theme=red]{Body-only red.}
+\callout*[theme=green]{Body-only green.}
+\callout*[theme=orange]{Body-only orange.}
+
+% ===================================================================
+\sectionrule{Numbered markers}
+\callout[theme=blue, number=1]{First}{Use \texttt{number=1} for a numeral
+instead of the dot.}
+\callout[theme=purple, number=2]{Second}{Each theme keeps its colours.}
+\callout*[theme=slate, number=A]{Alphabet, body only.}
+\callout[theme=green, number=1, vertical]{Vertical number}{Add
+\texttt{vertical} to rotate the numeral up the bar.}
+\callout[theme=purple, number=12, vertical]{Multi-digit}{Works for any
+number, e.g. \texttt{number=12, vertical}.}
+\callout[theme=teal, number=ABC, vertical]{Multi-alphabet}{Works for combination of alphabets, e.g. \texttt{number=ABC, vertical}.}
+
+% ===================================================================
+\sectionrule{Rounded corners}
+\callout[theme=teal, corners=rounded]{corners=rounded}{The colored bar
+follows the curve.}
+\callout*[theme=red, corners=rounded, arc=8pt]{Custom radius with
+\texttt{arc=8pt}, body only.}
+
+% ===================================================================
+\sectionrule{Drop shadow}
+\callout[theme=blue, shadow=on]{shadow=on}{A soft drop shadow lifts the box
+off the page.}
+\callout[theme=red, shadow=on, corners=rounded]{Shadow + rounded}{Combines
+with rounded corners.}
+\callout*[theme=green, shadow=on]{Shadowed, body only.}
+
+% ===================================================================
+\sectionrule{Custom one-off colours}
+If no theme fits, override any of \texttt{barcolor}, \texttt{bgcolor},
+\texttt{headcolor} with any \texttt{xcolor} expression.
+
+\callout[barcolor=magenta!70!black, bgcolor=magenta!7,
+         headcolor=magenta!70!black]{Custom mix}{Built from
+\texttt{xcolor} percentages.}
+
+\callout[theme=blue, barcolor=black]{Override just one}{Here only the bar is
+changed; the background and heading still come from \texttt{theme=blue}.}
+
+\definecolor{brand}{HTML}{6A1B9A}
+\definecolor{brandbg}{HTML}{F3E9F7}
+\callout[barcolor=brand, bgcolor=brandbg, headcolor=brand]{Defined colours}%
+{Pass your own \texttt{\textbackslash definecolor} names for brand palettes.}
+
+\end{document}

@@ -4,7 +4,7 @@ A small LaTeX package for **colored callout boxes** with a tinted background, a
 colored side bar, and a circular or numbered marker. Each box can show a bold
 colored heading plus body text, or body text only.
 
-![preview](preview.png)
+![preview](assets/preview.png)
 
 ## Features
 
