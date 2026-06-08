@@ -63,7 +63,7 @@
 
 % ---------------------------------------------------------------- lengths
 \newlength{\callout@barwd}   \setlength{\callout@barwd}{0.95cm} % width of colored bar
-\newlength{\callout@gap}     \setlength{\callout@gap}{0.45cm}   % gap bar -> text
+\newlength{\callout@gap}     \setlength{\callout@gap}{0.2cm}   % gap bar -> text
 \newlength{\callout@rad}     \setlength{\callout@rad}{4.6pt}    % marker radius
 \newlength{\callout@arc}     \setlength{\callout@arc}{0pt}      % corner radius (0 = sharp)
 
@@ -137,8 +137,8 @@
       arc=\callout@arc, outer arc=\callout@arc, boxrule=0pt, frame hidden,
       colback=callout@bg,
       left=\dimexpr\callout@barwd+\callout@gap\relax,
-      right=10pt, top=8pt, bottom=8pt,
-      before skip=6pt, after skip=6pt,
+      right=5pt, top=4pt, bottom=4pt,
+      before skip=4pt, after skip=4pt,
       callout@shadowstyle,
       overlay={%
         % clip to the (possibly rounded) box outline so the bar follows the corners
