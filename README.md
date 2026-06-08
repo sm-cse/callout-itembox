@@ -68,7 +68,7 @@ All options go in the optional `[...]` argument as `key=value`, comma-separated.
 | `bgcolor`   | any `xcolor` expression        | theme    | Override the background color.           |
 | `headcolor` | any `xcolor` expression        | theme    | Override the heading color.              |
 | `barwidth`  | length                         | `0.95cm` | Width of the colored side bar.           |
-| `gap`       | length                         | `0.45cm` | Space between the bar and the text.      |
+| `gap`       | length                         | `0.2cm` | Space between the bar and the text.      |
 
 The star (`\callout*`) switches to the body-only layout regardless of theme.
 
