@@ -1,7 +1,7 @@
 # callout-itembox - colored callout item/numbered boxes for LaTeX (document/Beamer)
 
 A small LaTeX package for **colored callout item/numbered boxes** with a tinted background, a
-colored side bar, and a circular or numbered marker. Each box can show a bold
+colored side bar with circular/numbered marker. Each box can show a bold
 colored heading plus body text, or body text only.
 
 **Quick Usage:** drop `callout-itembox.sty` next to your `.tex` file. 
@@ -19,9 +19,8 @@ axis correction and plantar pressure distribution.}
 \callout[theme=green, number=1, corners=rounded]{Step one}{First do this.}
 ```
 
-![preview](preview1.png)
-![preview](preview2.png)
-![preview](preview3.png)
+![preview](Preview_1.png)
+![preview](Preview_1.png)
 
 ## Features
 
