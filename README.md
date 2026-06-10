@@ -20,7 +20,7 @@ axis correction and plantar pressure distribution.}
 ```
 
 ![preview](Preview_1.png)
-![preview](Preview_1.png)
+![preview](Preview_2.png)
 
 ## Features
 
