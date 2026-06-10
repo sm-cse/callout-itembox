@@ -1,12 +1,12 @@
-# calloutbox - colored callout boxes for LaTeX (document/Beamer)
+# callout-itembox - colored callout item/numbered boxes for LaTeX (document/Beamer)
 
-A small LaTeX package for **colored callout boxes** with a tinted background, a
+A small LaTeX package for **colored callout item/numbered boxes** with a tinted background, a
 colored side bar, and a circular or numbered marker. Each box can show a bold
 colored heading plus body text, or body text only.
 
-**Quick Usage:** drop `calloutbox.sty` next to your `.tex` file. 
+**Quick Usage:** drop `callout-itembox.sty` next to your `.tex` file. 
 ```latex
-\usepackage{calloutbox}
+\usepackage{callout-itembox}
 
 % heading + body
 \callout{Primary Objective}{To establish a correlation between mechanical
@@ -42,14 +42,14 @@ A LaTeX engine (pdfLaTeX, XeLaTeX, or LuaLaTeX) with `tcolorbox`, `tikz`,
 
 ## Installation
 
-**Quick (per project):** drop `calloutbox.sty` next to your `.tex` file.
+**Quick (per project):** drop `callout-itembox.sty` next to your `.tex` file.
 
 **System-wide (TeX Live / MiKTeX):**
 
 ```sh
 # find your local texmf tree, e.g. ~/texmf on Linux/macOS
-mkdir -p $(kpsewhich -var-value TEXMFHOME)/tex/latex/calloutbox
-cp calloutbox.sty $(kpsewhich -var-value TEXMFHOME)/tex/latex/calloutbox/
+mkdir -p $(kpsewhich -var-value TEXMFHOME)/tex/latex/callout-itembox
+cp callout-itembox.sty $(kpsewhich -var-value TEXMFHOME)/tex/latex/callout-itembox/
 mktexlsr   # or texhash; MiKTeX: refresh the FNDB
 ```
 
@@ -85,4 +85,4 @@ pdflatex demo.tex
 
 MIT — see [LICENSE](LICENSE). (If you intend to publish on CTAN, the LaTeX
 Project Public License 1.3c is the conventional choice; swap the license file
-and the header in `calloutbox.sty` accordingly.)
+and the header in `callout-itembox.sty` accordingly.)
